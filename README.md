@@ -5,9 +5,12 @@
 
 
 ## Instrucciones
-- Parametros de movimiento y sensibilidad de camara se pueden modificar desde inspector de nodo Player
--Los bindings de movimiento son: "left,right,up,down"
--Binding de salto: "jump"
+- Copy paste carpeta player a nuevo proyecto de Godot
+
+- Los bindings de movimiento son: "left,right,up,down"
+
+- Binding de salto: "jump"
+
 - Esto es lo unico que debe de modificarse en Godot
 
 
