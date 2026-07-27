@@ -33,6 +33,7 @@
 - First Person Camara
 - Control para cambiar entre tercera y primera persona
 - test level
+- health
 
 ## Ideas:
 - expandir a mas componentes

@@ -14,7 +14,7 @@ albedo_color = Color(1, 0.05490196, 1, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_ax26v"]
 material = SubResource("StandardMaterial3D_ilk7j")
 
-[node name="Player" type="CharacterBody3D" unique_id=1212196175]
+[node name="Player" type="CharacterBody3D" unique_id=1212196175 groups=["player"]]
 script = ExtResource("1_nvxhs")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2081744617]

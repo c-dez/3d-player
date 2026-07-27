@@ -16,6 +16,10 @@ run/main_scene="uid://b7evue2d0ve5v"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[global_group]
+
+player=""
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
