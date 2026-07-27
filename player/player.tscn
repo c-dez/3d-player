@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c3cm2dyhyu84l"]
 
-[ext_resource type="Script" uid="uid://byaec2hvfuky7" path="res://actors/player/player.gd" id="1_nvxhs"]
-[ext_resource type="PackedScene" uid="uid://ddw6emsswsilm" path="res://actors/player/third_person_camera/third_person_camera.tscn" id="2_ilk7j"]
+[ext_resource type="Script" uid="uid://byaec2hvfuky7" path="res://player/player.gd" id="1_nvxhs"]
+[ext_resource type="PackedScene" uid="uid://ddw6emsswsilm" path="res://player/third_person_camera/third_person_camera.tscn" id="2_ilk7j"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6uhly"]
 
