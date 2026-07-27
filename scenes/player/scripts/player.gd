@@ -30,7 +30,7 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
     _gravity(delta)
     move(move_speed)
-    jump("jump")
+    jump("a_button")
     move_and_slide()
     
 

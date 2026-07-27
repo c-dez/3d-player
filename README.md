@@ -31,6 +31,8 @@ no debe usarse patrones de diseno a menos que exista una buena razon
 - camara tercera persona  controlada por mouse
 - asignar keybindings automaticamente 
 - test_level.tscn
+- agregar keybindongs basicos para keyboard y para gamepad
+
         
         
 ## TODO:
@@ -40,7 +42,6 @@ no debe usarse patrones de diseno a menos que exista una buena razon
 - Control para cambiar entre tercera y primera persona
 - test level
 - health
-- agregar keybindongs basicos para keyboard y para gamepad
 
 ## Ideas:
 - expandir a mas componentes
