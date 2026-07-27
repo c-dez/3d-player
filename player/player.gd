@@ -39,8 +39,9 @@ func move(_speed: float) -> void:
 
 
 func jump(button_name: String) -> void:
-    if Input.is_action_just_pressed(button_name):
-        velocity.y = _jump_velocity
+    if is_on_floor():
+        if Input.is_action_just_pressed(button_name):
+            velocity.y = _jump_velocity
 
 
 #--private--

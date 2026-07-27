@@ -29,5 +29,5 @@ mesh = SubResource("BoxMesh_ax26v")
 
 [node name="ThirdPersonCamera" parent="." unique_id=635731522 instance=ExtResource("2_ilk7j")]
 
-[node name="DefaultKeybindings" type="Node" parent="." unique_id=1017141062]
+[node name="README" type="Node" parent="." unique_id=1017141062]
 script = ExtResource("3_g1dw6")
