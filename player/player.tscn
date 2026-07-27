@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://c3cm2dyhyu84l"]
 
-[ext_resource type="Script" uid="uid://byaec2hvfuky7" path="res://player/player.gd" id="1_nvxhs"]
+[ext_resource type="Script" uid="uid://byaec2hvfuky7" path="res://player/scripts/player.gd" id="1_nvxhs"]
 [ext_resource type="PackedScene" uid="uid://ddw6emsswsilm" path="res://player/third_person_camera/third_person_camera.tscn" id="2_ilk7j"]
-[ext_resource type="Script" uid="uid://dgd7r2swulg8p" path="res://player/default_keybindings.gd" id="3_g1dw6"]
+[ext_resource type="Script" uid="uid://dgd7r2swulg8p" path="res://player/scripts/default_keybindings.gd" id="3_g1dw6"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6uhly"]
 

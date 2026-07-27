@@ -1,7 +1,13 @@
 # 3D Player Scene:
 
 ## Objetivo
-- Debe ser capaz de copiar y pegar en cualquier proyecto de godot y funcionar 
+- Quiero que este proyecto contenga varias escenas para 3D y que estas escenas puedan usarse en otros proyectos con solo copiar la carpeta con la escena deseada a el nuevo proyecto y que estas escenas ya puedan configurarse facilmente o esten preconfiguradas, esten bien encapsuladas para que puedan funcionar "drop and play"
+
+- Esto es para poder empezar la creacion de un prototipo lo mas pronto posible
+
+## Como hacerlo:
+- la carpeta player contiene todo lo que se necesita para que player pueda moverse
+- asi puedo exportar este folder a otro godot poner el .tscn en la escena de juego y y ya tiene todo lo que necesita para funcionar y se autoconfigura los keybindings, esto para ahorrarme tiempo y no hacer el proceso de yo manualmente poner los bindings
 
 
 ## Instrucciones
