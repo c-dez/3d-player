@@ -2,9 +2,8 @@ extends CharacterBody3D
 
 class_name Player
 
-
+@export_category('Movement')
 @export var move_speed: float = 10.0
-@export var mouse_sens: float = 0.1
 
 # jump _gravity
 @export var jump_height: float = 2.0
@@ -16,6 +15,7 @@ var _jump_gravity: float
 var _jump_fall_gravity: float
 ####
 
+var mouse_sens: float = 0.1
 
 func _ready() -> void:
     _calculate_gravity()

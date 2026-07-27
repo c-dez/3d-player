@@ -1,8 +1,10 @@
 extends Node
 
-## Usado para asignar las teclas de movimiento y salto por al iniciar el juego, BORRAR este nodo cuando se quieran asignar desde Egine
+
+## ejecuta autoconfiguraciones para poder drop and play
 
 
+# Usado para asignar las teclas de movimiento y salto por al iniciar el juego, BORRAR este nodo cuando se quieran asignar desde Egine
 var keybindings: Array = [
     'left',
     'right',
