@@ -6,9 +6,9 @@ class_name Player
 @export var speed: float = 10.0
 
 # jump _gravity
-@export var jump_height: float = 5.0
-@export var jump_time_to_peak: float = 0.5
-@export var jump_time_to_descend: float = 0.4
+@export var jump_height: float = 2.0
+@export var jump_time_to_peak: float = 0.3
+@export var jump_time_to_descend: float = 0.2
 var _jump_velocity: float
 var _jump_gravity: float
 var _jump_fall_gravity: float
@@ -16,27 +16,32 @@ var _jump_fall_gravity: float
 
 
 func _ready() -> void:
-    _calculate_jump_gravity()
+    _calculate_gravity()
     pass
 
 
 func _physics_process(delta: float) -> void:
     _gravity(delta)
     move(speed)
+    jump("jump")
     move_and_slide()
-    pass
+    
 
-
+#----
 func move(_speed: float) -> void:
     var input := _get_input()
     var direction := (transform.basis * Vector3(input.x, 0, input.y)).normalized()
 
-    # velocity.x = direction.x * _speed
-    # velocity.z = direction.z * _speed
-    velocity = direction * _speed
-    pass
+    velocity.x = direction.x * _speed
+    velocity.z = direction.z * _speed
 
-##-private--
+
+func jump(button_name:String)->void:
+    if Input.is_action_just_pressed(button_name):
+        velocity.y = _jump_velocity
+
+
+#--private--
 func _gravity(delta: float) -> void:
     if not is_on_floor():
         if velocity.y < 0.0:
@@ -45,10 +50,11 @@ func _gravity(delta: float) -> void:
             velocity.y -= _jump_gravity * delta
 
 
-func _calculate_jump_gravity() -> void:
+func _calculate_gravity() -> void:
     _jump_velocity = 2.0 * jump_height / jump_time_to_peak
     _jump_gravity = 2.0 * jump_height / (jump_time_to_peak * jump_time_to_peak)
     _jump_fall_gravity = 2.0 * jump_height / (jump_time_to_descend * jump_time_to_descend)
+
 
 ## Player input
 func _get_input() -> Vector2:
