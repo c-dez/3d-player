@@ -11,7 +11,7 @@
 
 
 
-## Incluye
+## Ya Hecho:
 - parametros exportados
 - movimiento "wasd" 
 - gravedad personalizable
@@ -26,3 +26,10 @@
     - Independiente de CharacterBody3D 
 - First Person Camara
 - Control para cambiar entre tercera y primera persona
+- test level
+
+## Ideas:
+- expandir a mas componentes
+    - test level
+    - start menu / pause
+    - save 
