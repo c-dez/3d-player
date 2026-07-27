@@ -2,13 +2,15 @@ extends CharacterBody3D
 
 class_name Player
 
-#export
-@export var speed: float = 10.0
+
+@export var move_speed: float = 10.0
+@export var mouse_sens: float = 0.1
 
 # jump _gravity
 @export var jump_height: float = 2.0
 @export var jump_time_to_peak: float = 0.3
 @export var jump_time_to_descend: float = 0.2
+
 var _jump_velocity: float
 var _jump_gravity: float
 var _jump_fall_gravity: float
@@ -22,21 +24,21 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
     _gravity(delta)
-    move(speed)
+    move(move_speed)
     jump("jump")
     move_and_slide()
     
 
 #----
 func move(_speed: float) -> void:
-    var input := _get_input()
+    var input := Input.get_vector("left", "right", "up", "down")
     var direction := (transform.basis * Vector3(input.x, 0, input.y)).normalized()
 
     velocity.x = direction.x * _speed
     velocity.z = direction.z * _speed
 
 
-func jump(button_name:String)->void:
+func jump(button_name: String) -> void:
     if Input.is_action_just_pressed(button_name):
         velocity.y = _jump_velocity
 
@@ -54,9 +56,3 @@ func _calculate_gravity() -> void:
     _jump_velocity = 2.0 * jump_height / jump_time_to_peak
     _jump_gravity = 2.0 * jump_height / (jump_time_to_peak * jump_time_to_peak)
     _jump_fall_gravity = 2.0 * jump_height / (jump_time_to_descend * jump_time_to_descend)
-
-
-## Player input
-func _get_input() -> Vector2:
-    var input := Input.get_vector("left", "right", "up", "down")
-    return input
