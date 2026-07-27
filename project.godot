@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="3d-player-tools-scenes-components"
-config/tags=PackedStringArray("scenes", "tools")
+config/tags=PackedStringArray("template", "tools")
 run/main_scene="uid://b7evue2d0ve5v"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
