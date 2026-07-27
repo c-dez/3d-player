@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://byaec2hvfuky7" path="res://player/player.gd" id="1_nvxhs"]
 [ext_resource type="PackedScene" uid="uid://ddw6emsswsilm" path="res://player/third_person_camera/third_person_camera.tscn" id="2_ilk7j"]
+[ext_resource type="Script" uid="uid://dgd7r2swulg8p" path="res://player/default_keybindings.gd" id="3_g1dw6"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6uhly"]
 
@@ -27,3 +28,6 @@ transform = Transform3D(1, 0, 0, 0, 0.4961679, 0, 0, 0, 0.57792467, 0, 0.5037825
 mesh = SubResource("BoxMesh_ax26v")
 
 [node name="ThirdPersonCamera" parent="." unique_id=635731522 instance=ExtResource("2_ilk7j")]
+
+[node name="DefaultKeybindings" type="Node" parent="." unique_id=1017141062]
+script = ExtResource("3_g1dw6")
