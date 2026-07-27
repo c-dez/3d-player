@@ -40,6 +40,7 @@ no debe usarse patrones de diseno a menos que exista una buena razon
 - Control para cambiar entre tercera y primera persona
 - test level
 - health
+- agregar keybindongs basicos para keyboard y para gamepad
 
 ## Ideas:
 - expandir a mas componentes
