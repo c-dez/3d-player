@@ -1,4 +1,5 @@
 # 3D Player Scene:
+cambiar enfoque de el proyecto, quiero un template para empezar rapido un 3rd person 
 
 ## Objetivo
 - Quiero que este proyecto contenga varias escenas para 3D y que estas escenas puedan usarse en otros proyectos con solo copiar la carpeta con la escena deseada a el nuevo proyecto y que estas escenas ya puedan configurarse facilmente o esten preconfiguradas, esten bien encapsuladas para que puedan funcionar "drop and play"

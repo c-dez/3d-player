@@ -17,7 +17,12 @@ var _jump_fall_gravity: float
 
 var mouse_sens: float = 0.1
 
+@export_category("stats")
+@export var max_health: int = 10
+var current_health:int
+
 func _ready() -> void:
+    current_health = max_health
     _calculate_gravity()
     pass
 

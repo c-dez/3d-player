@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://c3cm2dyhyu84l"]
 
-[ext_resource type="Script" uid="uid://byaec2hvfuky7" path="res://player/scripts/player.gd" id="1_nvxhs"]
-[ext_resource type="PackedScene" uid="uid://ddw6emsswsilm" path="res://player/third_person_camera/third_person_camera.tscn" id="2_ilk7j"]
-[ext_resource type="Script" uid="uid://dgd7r2swulg8p" path="res://player/scripts/default_keybindings.gd" id="3_g1dw6"]
+[ext_resource type="Script" uid="uid://byaec2hvfuky7" path="res://scenes/player/scripts/player.gd" id="1_nvxhs"]
+[ext_resource type="PackedScene" uid="uid://ddw6emsswsilm" path="res://scenes/player/third_person_camera/third_person_camera.tscn" id="2_ilk7j"]
+[ext_resource type="Script" uid="uid://dgd7r2swulg8p" path="res://scenes/player/scripts/default_keybindings.gd" id="3_g1dw6"]
+[ext_resource type="Script" uid="uid://ds8og5vvjvr3m" path="res://scenes/player/scripts/health.gd" id="4_yw30f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6uhly"]
 
@@ -29,7 +30,8 @@ mesh = SubResource("BoxMesh_ax26v")
 
 [node name="ThirdPersonCamera" parent="." unique_id=635731522 instance=ExtResource("2_ilk7j")]
 
-[node name="AutoKeybindings" type="Node" parent="." unique_id=1017141062]
+[node name="AutoConfig" type="Node" parent="." unique_id=1017141062]
 script = ExtResource("3_g1dw6")
 
-[node name="Node" type="Node" parent="." unique_id=862727198]
+[node name="Health" type="Node" parent="." unique_id=862727198]
+script = ExtResource("4_yw30f")

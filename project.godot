@@ -16,6 +16,12 @@ run/main_scene="uid://b7evue2d0ve5v"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[file_customization]
+
+folder_colors={
+"res://scenes/player/": "orange"
+}
+
 [global_group]
 
 player=""
