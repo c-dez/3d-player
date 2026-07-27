@@ -2,9 +2,7 @@ extends Node
 
 ## Usado para asignar las teclas de movimiento y salto por default, borrar este nodo cuando se quieran asignar desde Egine
 
-# var keybindings :Dictionary = {
-#     "LEFT" : 'left'
-# }
+
 var keybindings: Array = [
     'left',
     'right',
@@ -12,6 +10,7 @@ var keybindings: Array = [
     'down',
     'jump'
 ]
+
 
 func _ready() -> void:
     set_keybinding(keybindings)
@@ -33,9 +32,4 @@ func set_keybinding(keys: Array) -> void:
             'jump':
                 evento.keycode = KEY_SPACE
 
-
-
         InputMap.action_add_event(key, evento)
-
-                
-        pass
