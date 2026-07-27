@@ -25,11 +25,10 @@ no debe usarse patrones de diseno a menos que exista una buena razon
 
 ## Ya Hecho:
 - parametros exportados
-- movimiento "wasd" 
+- movimiento "wasd" y gamepad
 - gravedad personalizable
 - salto
-- camara tercera persona  controlada por mouse
-- asignar keybindings automaticamente 
+- camara tercera persona  controlada por mouse y gamepad
 - test_level.tscn
 - agregar keybindongs basicos para keyboard y para gamepad
 
