@@ -18,6 +18,7 @@
 - salto
 - camara tercera persona  controlada por mouse
 - asignar keybindings automaticamente 
+- test_level.tscn
         
         
 ## TODO:

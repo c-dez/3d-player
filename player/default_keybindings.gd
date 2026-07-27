@@ -17,6 +17,7 @@ func _ready() -> void:
 
 
 func set_keybinding(keys: Array) -> void:
+    print("-USANDO AUTO DEFAULT KEYBINDINGS-")
     for key in keys:
         InputMap.add_action(key)
         var evento = InputEventKey.new()
