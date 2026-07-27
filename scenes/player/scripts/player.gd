@@ -14,8 +14,11 @@ var _jump_velocity: float
 var _jump_gravity: float
 var _jump_fall_gravity: float
 ####
+@export_category("Camera Sens")
+@export var mouse_sens: float = 0.1
+@export var gamepad_sens_h:float = 3
+@export var gamepad_sens_v:float = 2
 
-var mouse_sens: float = 0.1
 
 @export_category("stats")
 @export var max_health: int = 10
