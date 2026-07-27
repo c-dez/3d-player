@@ -7,11 +7,8 @@
 ## Instrucciones
 - Copy paste carpeta player a nuevo proyecto de Godot
 
-- Los bindings de movimiento son: "left,right,up,down"
+- Los bindings de movimiento son: "left,right,up,down" y 'jump', nodo README dentro de player los inicializa
 
-- Binding de salto: "jump"
-
-- Esto es lo unico que debe de modificarse en Godot
 
 
 ## Incluye
@@ -20,6 +17,7 @@
 - gravedad personalizable
 - salto
 - camara tercera persona  controlada por mouse
+- asignar keybindings automaticamente 
         
         
 ## TODO:

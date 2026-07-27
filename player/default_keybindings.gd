@@ -1,6 +1,6 @@
 extends Node
 
-## Usado para asignar las teclas de movimiento y salto por default, borrar este nodo cuando se quieran asignar desde Egine
+## Usado para asignar las teclas de movimiento y salto por al iniciar el juego, BORRAR este nodo cuando se quieran asignar desde Egine
 
 
 var keybindings: Array = [
