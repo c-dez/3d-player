@@ -14,15 +14,16 @@ var _jump_velocity: float
 var _jump_gravity: float
 var _jump_fall_gravity: float
 ####
-@export_category("Camera Sens")
-@export var mouse_sens: float = 0.1
-@export var gamepad_sens_h:float = 3
-@export var gamepad_sens_v:float = 2
-
 
 @export_category("stats")
 @export var max_health: int = 10
-var current_health:int
+var current_health: int
+
+@export_category("Camera Sens")
+@export var mouse_sens: float = 0.1
+@export var gamepad_sens_h: float = 3
+@export var gamepad_sens_v: float = 2
+
 
 func _ready() -> void:
     current_health = max_health
