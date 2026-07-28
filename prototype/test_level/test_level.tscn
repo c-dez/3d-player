@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://mqufeol86snx"]
 
+[ext_resource type="Script" uid="uid://1m6wd1hbaq0c" path="res://prototype/test_level/test_level.gd" id="1_n8sv4"]
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_itv7y"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -17,6 +19,7 @@ glow_enabled = true
 albedo_color = Color(0.13319641, 0.13319641, 0.13319638, 1)
 
 [node name="TestLevel" type="Node3D" unique_id=1271615060]
+script = ExtResource("1_n8sv4")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=49150791]
 environment = SubResource("Environment_4bqwy")
@@ -43,3 +46,6 @@ size = Vector3(4, 4, 4)
 [node name="CSGBox3D3" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1344661050]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 1.2500004, 7.48555)
 size = Vector3(4, 2, 4)
+
+[node name="Spawn" type="Marker3D" parent="." unique_id=1432339095]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.489172, 4.2499995, 3)

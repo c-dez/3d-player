@@ -12,9 +12,13 @@ config_version=5
 
 config/name="3d-player-tools-scenes-components"
 config/tags=PackedStringArray("template", "tools")
-run/main_scene="uid://b7evue2d0ve5v"
+run/main_scene="uid://bppsp7j37c8ui"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+LevelPath="*uid://bbblsimdaxem4"
 
 [file_customization]
 

@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://ta2e6dlcit1e" path="res://core/main_game/main_game.gd" id="1_iuroi"]
 [ext_resource type="Script" uid="uid://doclmo6icrmqo" path="res://core/main_game/levels_info.gd" id="2_iuroi"]
-[ext_resource type="PackedScene" uid="uid://c3cm2dyhyu84l" path="res://gameplay/characters/player/player.tscn" id="3_7rdkn"]
 
 [node name="MainGame" type="Node3D" unique_id=1861300316]
 script = ExtResource("1_iuroi")
+metadata/_edit_lock_ = true
 
 [node name="Systems" type="Node" parent="." unique_id=1494597344]
 
@@ -13,13 +13,13 @@ script = ExtResource("1_iuroi")
 script = ExtResource("2_iuroi")
 
 [node name="World" type="Node3D" parent="." unique_id=492779724]
+metadata/_edit_lock_ = true
 
 [node name="LevelRoot" type="Node3D" parent="World" unique_id=209841897]
+metadata/_edit_lock_ = true
 
 [node name="EntityRoot" type="Node3D" parent="World" unique_id=1420444452]
-
-[node name="Player" parent="World/EntityRoot" unique_id=1212196175 instance=ExtResource("3_7rdkn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.250001, 0)
+metadata/_edit_lock_ = true
 
 [node name="HudLayer" type="CanvasLayer" parent="." unique_id=2133964892]
 
