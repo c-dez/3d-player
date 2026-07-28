@@ -8,11 +8,13 @@ extends Node
 
 func take_damage(damage: int) -> void:
     _player.current_health -= damage
+    print(_player.current_health)
     if _player.current_health < 1:
         die()
 
 func take_heal(heal: int) -> void:
     _player.current_health += heal
+
 
     
 func die() -> void:

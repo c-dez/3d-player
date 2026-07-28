@@ -2,6 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://c3cm2dyhyu84l" path="res://scenes/player/player.tscn" id="1_eyux1"]
 [ext_resource type="PackedScene" uid="uid://mqufeol86snx" path="res://scenes/test_level/test_level.tscn" id="2_jl4lr"]
+[ext_resource type="PackedScene" uid="uid://dih1d850mt4k3" path="res://scenes/hitbox/hitbox.tscn" id="3_jl4lr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_m1tqf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ty0le"]
 
 [node name="DemoScene" type="Node3D" unique_id=1271615060]
 
@@ -9,3 +14,13 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2500005, 0)
 
 [node name="TestLevel" parent="." unique_id=695655606 instance=ExtResource("2_jl4lr")]
+
+[node name="HitboxTest" type="MeshInstance3D" parent="." unique_id=174497779]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7755771, -3.018629)
+mesh = SubResource("BoxMesh_m1tqf")
+
+[node name="Hitbox" parent="HitboxTest" unique_id=1047360292 instance=ExtResource("3_jl4lr")]
+collision_layer = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HitboxTest/Hitbox" unique_id=1968497685]
+shape = SubResource("BoxShape3D_ty0le")
