@@ -32,6 +32,7 @@ transform = Transform3D(1, 0, 0, 0, 0.4961679, 0, 0, 0, 0.57792467, 0, 0.5037825
 mesh = SubResource("BoxMesh_ax26v")
 
 [node name="ThirdPersonCamera" parent="." unique_id=635731522 instance=ExtResource("2_ilk7j")]
+transform = Transform3D(1, 0, 0, 0, 0.87077665, 0.49167907, 0, -0.49167907, 0.87077665, 0, 0, 0)
 
 [node name="Health" type="Node" parent="." unique_id=862727198]
 script = ExtResource("4_yw30f")

@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://mqufeol86snx"]
 
-[ext_resource type="Script" uid="uid://1m6wd1hbaq0c" path="res://prototype/level_1/test_level.gd" id="1_0o5jw"]
+[ext_resource type="PackedScene" uid="uid://dj402b7qc3e8j" path="res://gameplay/components/spawn_point/spawn_point.tscn" id="1_8wvq7"]
+
+[sub_resource type="GDScript" id="GDScript_miw57"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_itv7y"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -19,7 +21,7 @@ glow_enabled = true
 albedo_color = Color(0.13319641, 0.13319641, 0.13319638, 1)
 
 [node name="TestLevel" type="Node3D" unique_id=1271615060]
-script = ExtResource("1_0o5jw")
+script = SubResource("GDScript_miw57")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=49150791]
 environment = SubResource("Environment_4bqwy")
@@ -47,5 +49,5 @@ size = Vector3(4, 4, 4)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 1.2500004, 7.48555)
 size = Vector3(4, 2, 4)
 
-[node name="Spawn" type="Marker3D" parent="." unique_id=1432339095]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.489172, 4.2499995, 3)
+[node name="SpawnPoint" parent="." unique_id=1047715984 instance=ExtResource("1_8wvq7")]
+transform = Transform3D(-0.47281227, 0.8811632, 3.8516866e-08, 0, -4.371139e-08, 1, 0.8811632, 0.47281227, 2.0667281e-08, -7.489172, 4.7499995, 3)
