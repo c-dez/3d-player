@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b7evue2d0ve5v"]
 
 [ext_resource type="PackedScene" uid="uid://c3cm2dyhyu84l" path="res://gameplay/characters/player/player.tscn" id="1_63mfe"]
-[ext_resource type="PackedScene" uid="uid://mqufeol86snx" path="res://prototype/test_level/test_level.tscn" id="2_2gf1x"]
+[ext_resource type="PackedScene" uid="uid://mqufeol86snx" path="res://prototype/level_1/level_1.tscn" id="2_2gf1x"]
 [ext_resource type="PackedScene" uid="uid://dih1d850mt4k3" path="res://gameplay/components/hitbox/hitbox.tscn" id="3_rnyru"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_m1tqf"]
