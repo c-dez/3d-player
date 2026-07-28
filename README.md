@@ -31,6 +31,7 @@ no debe usarse patrones de diseno a menos que exista una buena razon
 - camara tercera persona  controlada por mouse y gamepad
 - test_level.tscn
 - agregar keybindongs basicos para keyboard y para gamepad
+- hitbox y hurtbox
 
         
         
