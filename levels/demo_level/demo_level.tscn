@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b7evue2d0ve5v"]
 
-[ext_resource type="PackedScene" uid="uid://c3cm2dyhyu84l" path="res://scenes/player/player.tscn" id="1_eyux1"]
-[ext_resource type="PackedScene" uid="uid://mqufeol86snx" path="res://scenes/test_level/test_level.tscn" id="2_jl4lr"]
-[ext_resource type="PackedScene" uid="uid://dih1d850mt4k3" path="res://scenes/hitbox/hitbox.tscn" id="3_jl4lr"]
+[ext_resource type="PackedScene" uid="uid://c3cm2dyhyu84l" path="res://gameplay/characters/player/player.tscn" id="1_63mfe"]
+[ext_resource type="PackedScene" uid="uid://mqufeol86snx" path="res://prototype/test_level/test_level.tscn" id="2_2gf1x"]
+[ext_resource type="PackedScene" uid="uid://dih1d850mt4k3" path="res://gameplay/components/hitbox/hitbox.tscn" id="3_rnyru"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_m1tqf"]
 
@@ -10,16 +10,16 @@
 
 [node name="DemoScene" type="Node3D" unique_id=1271615060]
 
-[node name="Player" parent="." unique_id=1212196175 instance=ExtResource("1_eyux1")]
+[node name="Player" parent="." unique_id=1212196175 instance=ExtResource("1_63mfe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2500005, 0)
 
-[node name="TestLevel" parent="." unique_id=695655606 instance=ExtResource("2_jl4lr")]
+[node name="TestLevel" parent="." unique_id=695655606 instance=ExtResource("2_2gf1x")]
 
 [node name="HitboxTest" type="MeshInstance3D" parent="." unique_id=174497779]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7755771, -3.018629)
 mesh = SubResource("BoxMesh_m1tqf")
 
-[node name="Hitbox" parent="HitboxTest" unique_id=1047360292 instance=ExtResource("3_jl4lr")]
+[node name="Hitbox" parent="HitboxTest" unique_id=1047360292 instance=ExtResource("3_rnyru")]
 collision_layer = 4
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="HitboxTest/Hitbox" unique_id=1968497685]

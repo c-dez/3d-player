@@ -19,7 +19,7 @@ config/icon="res://icon.svg"
 [file_customization]
 
 folder_colors={
-"res://scenes/player/": "orange"
+"res://gameplay/characters/player/": "orange"
 }
 
 [global_group]

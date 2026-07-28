@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://c3cm2dyhyu84l"]
 
-[ext_resource type="Script" uid="uid://byaec2hvfuky7" path="res://scenes/player/scripts/player.gd" id="1_nvxhs"]
-[ext_resource type="PackedScene" uid="uid://ddw6emsswsilm" path="res://scenes/player/third_person_camera/third_person_camera.tscn" id="2_ilk7j"]
-[ext_resource type="Script" uid="uid://bxyqbd7jvf62i" path="res://scenes/hurtbox/hurtbox.gd" id="4_lvxji"]
-[ext_resource type="Script" uid="uid://ds8og5vvjvr3m" path="res://scenes/player/scripts/health.gd" id="4_yw30f"]
+[ext_resource type="Script" uid="uid://byaec2hvfuky7" path="res://gameplay/characters/player/scripts/player.gd" id="1_nvxhs"]
+[ext_resource type="PackedScene" uid="uid://ddw6emsswsilm" path="res://gameplay/components/third_person_camera/third_person_camera.tscn" id="2_ilk7j"]
+[ext_resource type="Script" uid="uid://bxyqbd7jvf62i" path="res://gameplay/components/hurtbox/hurtbox.gd" id="4_lvxji"]
+[ext_resource type="Script" uid="uid://ds8og5vvjvr3m" path="res://gameplay/characters/player/scripts/health.gd" id="4_yw30f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6uhly"]
 
