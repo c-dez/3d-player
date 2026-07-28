@@ -20,7 +20,7 @@ func load_level(_level_path: String) -> void:
 	level_root.add_child(l)
 
 	var player: Player = get_tree().get_first_node_in_group('player')
-	## Usado temporalmente por que el origin de el player no se encuentra en el suelo, cuando implemente un modelo se tiene que poner el origin en el suelo
+	## Usado temporalmente por que el origin de el player no se encuentra en el suelo, cuando implemente un modelo se tiene que poner el origin en el suelo aunque el mesh es el que cambio el origin no el characterBody
 	var height_offset: float = 1.0
 
 	player.global_position = Vector3(l.spawn_point.x,l.spawn_point.y + height_offset, l.spawn_point.z)
