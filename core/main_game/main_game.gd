@@ -10,23 +10,24 @@ class_name MainGame
 
 func _ready() -> void:
 	load_player()
-	load_level(LevelPath.TEST_LEVELS["level_1"])
+	load_level(ScenePaths.TEST_LEVELS["level_1"])
 
 
 func load_level(_level_path: String) -> void:
 	var level: PackedScene = load(_level_path)
 	var l := level.instantiate()
 	level_root.add_child(l)
-
-	var player: Player = get_tree().get_first_node_in_group('player')
-	## Usado temporalmente por que el origin de el player no se encuentra en el suelo, cuando implemente un modelo se tiene que poner el origin en el suelo aunque el mesh es el que cambio el origin no el characterBody
-
-	var spawn:SpawnPoint = l.get_node('SpawnPoint')
-	player.global_position =spawn.spawn_pos
-	player.look_at(spawn.look_at_pos)
+	var spawn: SpawnPoint = l.get_node('SpawnPoint')
+	spawn_player(spawn)
 
 
 func load_player() -> void:
-	var player: PackedScene = load('res://gameplay/characters/player/player.tscn')
+	var player: PackedScene = load(ScenePaths.PLAYER)
 	var p := player.instantiate()
 	entity_root.add_child(p)
+
+
+func spawn_player(spawn: SpawnPoint) -> void:
+	var player: Player = get_tree().get_first_node_in_group('player')
+	player.global_position = spawn.spawn_pos
+	player.look_at(spawn.look_at_pos)

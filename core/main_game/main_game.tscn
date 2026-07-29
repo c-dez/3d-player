@@ -1,7 +1,17 @@
 [gd_scene format=3 uid="uid://bppsp7j37c8ui"]
 
 [ext_resource type="Script" uid="uid://ta2e6dlcit1e" path="res://core/main_game/main_game.gd" id="1_iuroi"]
-[ext_resource type="Script" uid="uid://doclmo6icrmqo" path="res://core/main_game/levels_info.gd" id="2_iuroi"]
+
+[sub_resource type="GDScript" id="GDScript_lmbqn"]
+script/source = "extends Node
+
+const TEST_PATHS: Dictionary = {
+    'test' = 'res://prototype/test_level/test_level.tscn',
+
+}
+
+const PLAYER_PATH = 'res://gameplay/characters/player/player.tscn'
+"
 
 [node name="MainGame" type="Node3D" unique_id=1861300316]
 script = ExtResource("1_iuroi")
@@ -10,7 +20,7 @@ metadata/_edit_lock_ = true
 [node name="Systems" type="Node" parent="." unique_id=1494597344]
 
 [node name="LevelsPaths" type="Node" parent="." unique_id=1578923422]
-script = ExtResource("2_iuroi")
+script = SubResource("GDScript_lmbqn")
 
 [node name="World" type="Node3D" parent="." unique_id=492779724]
 metadata/_edit_lock_ = true

@@ -18,7 +18,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-LevelPath="*uid://bbblsimdaxem4"
+ScenePaths="*uid://yepkhuqw0l4d"
 
 [file_customization]
 
