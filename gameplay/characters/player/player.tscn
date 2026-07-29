@@ -18,6 +18,7 @@ material = SubResource("StandardMaterial3D_ilk7j")
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lvxji"]
 
 [node name="Player" type="CharacterBody3D" unique_id=1212196175 groups=["player"]]
+collision_layer = 2
 script = ExtResource("1_nvxhs")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2081744617]
